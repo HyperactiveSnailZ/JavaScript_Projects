@@ -58,7 +58,9 @@ async function getQuotes() {
         //console.log(apiQuotes[12]);
         newQuote();
     } catch (error) {
+
         //catch error
+        newQuote(); // prevent infinite loop with counter !
     }
 }
 
